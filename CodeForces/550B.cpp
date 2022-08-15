@@ -15,6 +15,9 @@ int main()
             cin>>a[i];
         }
         ans=0;
+        // Generate all possible subsets and check each subset if it fits the conditions 
+        // First Condition  --> sum of the chosen problems are between l and r
+        // second Condition --> difference between the hardest the easiest problem is at least = X
         for(i=0; i<(1<<n); i++)
         {
             mx=-1;
